@@ -1,0 +1,25 @@
+<!doctype html>
+
+<hmtl>
+<head>
+	<title>As Aventuras de Sindbad!</title>
+	
+</head>
+<body>
+	<button id = "play">Jogar</button>
+	<button id = "clear">Limpar</button>
+	<div id = "results"></div>
+	
+<script src="JS/zepto.js"</script>
+<script src="JS/Sindbad.js"</script>
+
+<script>
+$("#play").click(function(){
+	PLAY.Jogar($('results'));
+});
+$('#clear').click(function(){
+	$('#results').html('');
+});
+</script>
+</body>
+</html>
